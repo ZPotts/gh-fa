@@ -1,0 +1,11 @@
+name: First Workflow
+on: workflow_dispatch #event / workflow trigger
+jobs:
+  first-job:                  #job name can be anything you want
+    runs-on: ubuntu-latest    #the runner: the environment that it will run on. search for gh actions runners
+    steps:                    #reserved name
+      - name: Print greeting  #step name, can be anything. Dash is what declares next step
+        run: echo "Henlo World"
+      - name: Print GB
+        run: echo "done - bye"
+        
